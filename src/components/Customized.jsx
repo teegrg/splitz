@@ -34,7 +34,7 @@ function Customized() {
         <div className="customized__input__box">
           {memberNames.map((name, index) => (
             <div className="customized__input" key={index}>
-              {name}
+              {name || String.fromCharCode(65 + index)}
               <input
                 type="text"
                 value={rentAmounts[index] || ""}
@@ -43,7 +43,7 @@ function Customized() {
                   newRentAmounts[index] = e.target.value;
                   setRentAmounts(newRentAmounts);
                 }}
-                placeholder={`Enter rent for ${name}`}
+                placeholder={`Enter rent for ${name || String.fromCharCode(65 + index)}`}
                 inputMode="numeric"
               />
             </div>
@@ -52,7 +52,7 @@ function Customized() {
         </div>
       )}
       <div className="rent__category">
-        <div>
+        <div className="category">
           <label>Category:</label>
           <input
             type="text"

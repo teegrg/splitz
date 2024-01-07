@@ -22,7 +22,7 @@ const MemberDiv = () => {
   const generateMembers = () => {
     return memberNames.map((name, index) => (
       <div key={index} className="member">
-        {name || String.fromCharCode(65 + index)}
+        {!name && String.fromCharCode(65 + index)}
         <input
           type="text"
           value={name}
@@ -32,6 +32,7 @@ const MemberDiv = () => {
       </div>
     ));
   };
+  
 
   const handleSaveClick = () => {
     // You can access the customized member names in the memberNames state array
@@ -44,7 +45,7 @@ const MemberDiv = () => {
       <div className="member__box">
         <label>Number of Members:</label>
         <input
-          type="number"
+          type="text"
           value={memberCount === 0 ? "" : memberCount}
           onChange={handleMemberCountChange}
           inputMode="numeric"

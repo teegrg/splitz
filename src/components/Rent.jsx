@@ -52,7 +52,7 @@ const Rent = () => {
           <p>Individual Shares (Rent + Expenses):</p>
           {memberNames.map((name, index) => (
             <div className="rent__indv__text" key={index}>
-              {name}: {parseFloat(rentCosts[index]).toFixed(2)}
+              {name || String.fromCharCode(65 + index)}: {parseFloat(rentCosts[index]).toFixed(2)}
             </div>
           ))}
         </div>
@@ -60,6 +60,7 @@ const Rent = () => {
     }
     return null;
   };
+  
 
   return (
     <div className="rent">
