@@ -1,38 +1,186 @@
-.App {
+:root {
+  --main-col: rgb(239, 243, 229);
+  --main-yellow: rgb(240, 222, 166);
+  --main-blue: #45567d;
+  --main-gray: rgba(0, 0, 0, 0.661);;
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-col);
+}
+
+.nav {
+  height: 140px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
+  font-size: 4em;
+  position: sticky;
+  top: 0;
+  background-color: rgba(242, 240, 240, 0.971);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5em;
+  padding: 5px 0 5px 10px;
+}
+
+.nav > img {
+  color: var(--main-gray);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-yellow);
+}
+
+.home {
+  height: 650px;
+  background-image: url("./components/Pic/splitz.png");
+  background-size: 125px;
+}
+
+/* members comp */
+
+.member__box {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  font-size: 2.5em;
+  padding-top: 70px;
+  margin-bottom: 10px;
+  color: var(--main-gray);
+}
+
+.member__box > input {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 25px auto 0 auto;
+  font-size: larger;
+}
+
+.member__container > button {
+  width: 150px;
+  height: 50px;
+  margin-top: 50px;
+  font-size: x-large;
+}
+
+.member__container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.member {
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="number"],
+input[type="text"] {
+  width: 200px; /* Adjust the width as needed */
+  padding: 8px; /* Adjust the padding as needed */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* rent */
+
+.rent {
+  height: 650px;
+  text-align: center;
+  background-size: 200px;
+  /* background-image: url("./components/Pic/splitz.png"); */
+}
+
+.total__rent__btn {
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.rent > h2 {
+  font-size: 2em;
+}
+
+.custom {
+  color: var(--main-gray);
+  text-decoration-line: underline;
+  font-size: 1.5em;
+}
+
+.custom:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 255, 0.684);
+}
+
+.rent__category {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 25px;
+}
+.amount {
+  padding-top: 25px;
+  padding-left: 6px;
+  margin-bottom: 50px;
+}
+.rent__category > button {
+  height: 50px;
+  width: 150px;
+  margin: 10px auto 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.rent__indv {
+  /* border: 1px solid black; */
+  margin: 5px;
+  font-size: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rent__indv > p {
+  color: var(--main-gray);
+}
+
+.rent__indv__text {
+  font-size: x-large;
+  padding-bottom: 5px;
+}
+
+/* CUSTOMIZE */
+
+.customized {
+  text-align: center;
+  height: 650px;
+  margin-top: 25px;
+  padding-top: 50px;
+  
+}
+
+.customized__input {
+  padding-bottom: 10px;
+}
+
+.customized__input__box > button {
+  width: 100px;
+  height: 40px;
+  font-size: larger;
+  margin-bottom: 10px;
+}
+
+.total__exp > p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.total__exp__list {
+  font-size: x-large;
+}
+
+.footer {
+  height: 100px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 70px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(242, 240, 240, 0.971);
+  /* background-color: rgba(228, 234, 212, 0.544); */
 }
