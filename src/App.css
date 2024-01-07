@@ -18,7 +18,8 @@ body {
   top: 0;
   background-color: rgba(242, 240, 240, 0.971);
   display: flex;
-  justify-content: space-between;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
 .logo {
@@ -28,6 +29,8 @@ body {
 
 .nav > img {
   color: var(--main-gray);
+  width: 100px;
+  height: 100px;
 }
 
 a {
