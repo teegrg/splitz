@@ -79,7 +79,7 @@ const Rent = () => {
       </div>
 
       <div className="rent__category">
-        <div>
+        <div className="category">
           <label>Category:</label>
           <input
             type="text"

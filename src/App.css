@@ -121,10 +121,20 @@ input[type="text"] {
   justify-content: center;
   padding-top: 25px;
 }
+
+.category,
 .amount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-top: 25px;
-  padding-left: 6px;
-  margin-bottom: 50px;
+  /* padding-left: 6px; */
+  /* margin-bottom: 50px; */
+}
+.category > input,
+.amount > input {
+  margin-left: auto;
+  margin-right: auto;
 }
 .rent__category > button {
   height: 50px;
