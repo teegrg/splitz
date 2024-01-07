@@ -30,19 +30,11 @@ const VisitorCounter = () => {
   }, [uniqueVisitors]); // Include uniqueVisitors in the dependency array
 
   return (
-    <div>
-      <h2>Visitor Counter</h2>
-      <p>
-        Total Unique Visitors: {uniqueVisitors}
-      </p>
+    <div className="counter">
+        {uniqueVisitors}
     </div>
   );
 };
 
 export default VisitorCounter;
 
-return (
-  <div className="counter">
-      {uniqueVisitors}
-  </div>
-);
