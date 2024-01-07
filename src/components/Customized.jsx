@@ -44,6 +44,7 @@ function Customized() {
                   setRentAmounts(newRentAmounts);
                 }}
                 placeholder={`Enter rent for ${name}`}
+                inputMode="numeric"
               />
             </div>
           ))}
@@ -67,6 +68,7 @@ function Customized() {
             value={expenseAmount}
             onChange={(e) => setExpenseAmount(e.target.value)}
             placeholder="Enter amount"
+            inputMode="numeric"
           />
         </div>
 

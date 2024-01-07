@@ -27,7 +27,7 @@ const MemberDiv = () => {
           type="text"
           value={name}
           onChange={(e) => handleMemberNameChange(index, e)}
-          placeholder={`Member ${index + 1}`}
+          placeholder={`Add name ${index + 1}`}
         />
       </div>
     ));
@@ -47,6 +47,7 @@ const MemberDiv = () => {
           type="number"
           value={memberCount === 0 ? "" : memberCount}
           onChange={handleMemberCountChange}
+          inputMode="numeric"
         />
       </div>
       <div className="member__list">{generateMembers()}</div>

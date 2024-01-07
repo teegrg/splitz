@@ -8,6 +8,7 @@ const VisitorCounter = () => {
     const storedCount = localStorage.getItem("uniqueVisitors");
 
     if (storedCount) {
+      // If a count is found, parse and set it as the initial value
       setUniqueVisitors(parseInt(storedCount, 10));
     } else {
       // If no count is found, initialize with 0
@@ -19,22 +20,27 @@ const VisitorCounter = () => {
 
     if (!hasVisited) {
       // If it's a new visitor, increment the unique visitors count
-      setUniqueVisitors((prevCount) => prevCount + 1);
+      setUniqueVisitors((prevCount) => {
+        // Use the callback version to access the previous state
+        const newCount = prevCount + 1;
 
-      // Set a flag in localStorage to mark this visitor as visited
-      localStorage.setItem("hasVisited", "true");
+        // Set a flag in localStorage to mark this visitor as visited
+        localStorage.setItem("hasVisited", "true");
 
-      // Update the stored unique visitors count in localStorage
-      localStorage.setItem("uniqueVisitors", (uniqueVisitors + 1).toString());
+        // Update the stored unique visitors count in localStorage
+        localStorage.setItem("uniqueVisitors", newCount.toString());
+
+        // Return the new count to update the state
+        return newCount;
+      });
     }
-  }, [uniqueVisitors]); // Include uniqueVisitors in the dependency array
+  }, []); // Empty dependency array to run the effect only on mount
 
   return (
     <div className="counter">
-        {uniqueVisitors}
+      {uniqueVisitors}
     </div>
   );
 };
 
 export default VisitorCounter;
-

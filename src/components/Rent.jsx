@@ -70,6 +70,7 @@ const Rent = () => {
           value={totalRent}
           onChange={(e) => setTotalRent(e.target.value)}
           placeholder="Enter total rent"
+          inputMode="numeric"
         />
         <button className="total__rent__btn" onClick={handleAddClick}>Add</button>
       </div>
@@ -95,6 +96,7 @@ const Rent = () => {
             value={expenseAmount}
             onChange={(e) => setExpenseAmount(e.target.value)}
             placeholder="Enter amount"
+            inputMode="numeric"
           />
         </div>
         <button onClick={handleAddExpense}>Add Expense</button>
