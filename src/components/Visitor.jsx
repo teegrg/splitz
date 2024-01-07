@@ -27,13 +27,22 @@ const VisitorCounter = () => {
       // Update the stored unique visitors count in localStorage
       localStorage.setItem("uniqueVisitors", (uniqueVisitors + 1).toString());
     }
-  }, []);
+  }, [uniqueVisitors]); // Include uniqueVisitors in the dependency array
 
   return (
-    <div className="counter">
-        {uniqueVisitors}
+    <div>
+      <h2>Visitor Counter</h2>
+      <p>
+        Total Unique Visitors: {uniqueVisitors}
+      </p>
     </div>
   );
 };
 
 export default VisitorCounter;
+
+return (
+  <div className="counter">
+      {uniqueVisitors}
+  </div>
+);
