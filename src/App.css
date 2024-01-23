@@ -42,7 +42,30 @@ a {
   height: 650px;
   background-image: url("./components/Pic/splitz.png");
   background-size: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.transform-container {
+  display: flex;
+}
+
+.transform-word {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  text-align: center;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
 
 /* members comp */
 
