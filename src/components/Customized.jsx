@@ -81,7 +81,7 @@ function Customized() {
           <p>Rent Amounts:</p>
           {memberNames.map((name, index) => (
             <div key={index}>
-              {name} : {rentAmounts[index]}
+              {name} : ${rentAmounts[index]}
             </div>
           ))}
         </div>
@@ -93,7 +93,7 @@ function Customized() {
           <p>Total Costs After Adding Expense:</p>
           {memberNames.map((name, index) => (
             <div className="total__exp__list" key={index}>
-              {name} : {rentAmounts[index]}
+              {name} : ${rentAmounts[index]}
             </div>
           ))}
         </div>
