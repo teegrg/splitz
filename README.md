@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Rent Splitting App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Splitz
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+The Rent Splitting App is a tool designed to simplify the process of splitting rent and shared expenses among multiple members. Whether you're living with roommates, sharing a workspace this app provides an easy-to-use interface for tracking and managing shared costs.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Add Member Count**: Specify the number of members who will be splitting the rent and expenses.
+- **Choose Member Names**: Customize member names or use default tags.
+- **Add Rent Amount**: Enter the total rent amount, which will be split equally among all members.
+- **Customize Rent Per Head**: Manually adjust rent amounts for each member based on individual arrangements.
+- **Add Expenses**: Enter expenses along with categories and amounts. Expenses are distributed equally among all members.
+- **Remove Expenses**: Remove expenses from individual members and redistribute among others.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## How to Use
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Add Member Count**: Specify the number of members.
+2. **Choose Member Names**: Customize or use default names.
+3. **Add Rent Amount**: Enter the total rent.
+4. **Customize Rent Per Head**: Optionally, adjust individual rent amounts.
+5. **Add Expenses**: Enter expenses with categories and amounts.
+6. **Remove Expenses**: Remove expenses if needed.
+7. **Collect Owed Amounts**: one person Collects owed amounts.
+8. **Reimburse Expenses**: Reimburse members who have paid bills or expenses from the total collected.
+9. **Recap**: Review each member's share of expenses.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get started with the Rent Splitting App, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies by running `npm install`.
+4. Start the development server with `npm start`.
+5. Access the app in your web browser at `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Material-UI
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributions to the Rent Splitting App are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## tshreing gurung
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
