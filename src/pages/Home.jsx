@@ -6,21 +6,23 @@ function Home() {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % 4); // Use modulo to cycle through the words
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length); // Use modulo to cycle through the words
     }, 2000);
 
     return () => clearTimeout(timeout);
   }, [currentIndex]);
 
+  const texts = ["नमस्ते", "Hello", "Ola", " བཀྲ་ཤིས་བདེ་ལེགས"]; // Array of words
+
   return (
     <div className="home">
       <Members />
       <div className="transform-container">
-        {["Namaste", "Hello", "Ola", "こんにちは"].map((text, index) => (
-          <div key={index} className={`transform-word ${index === currentIndex ? 'visible' : 'hidden'}`}>
-            {text}
+        <div className="transform-wrapper">
+          <div className="transform-word">
+            {texts[currentIndex]}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
