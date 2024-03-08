@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const MemberDiv = () => {
+const Members = () => {
   const [memberCount, setMemberCount] = useState(0);
   const [memberNames, setMemberNames] = useState(Array(memberCount).fill(""));
   const navigate = useNavigate();
@@ -52,9 +52,9 @@ const MemberDiv = () => {
         />
       </div>
       <div className="member__list">{generateMembers()}</div>
-      <button onClick={handleSaveClick}>Next</button>
+      <button className="member__btn" onClick={handleSaveClick}>Next</button>
     </div>
   );
 };
 
-export default MemberDiv;
+export default Members;
