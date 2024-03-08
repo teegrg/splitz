@@ -10,7 +10,7 @@ function Home() {
     }, 2000);
 
     return () => clearTimeout(timeout);
-  }, [currentIndex]);
+  }, [currentIndex, texts.length]);
 
   const texts = ["नमस्ते", "Hello", "Ola", " བཀྲ་ཤིས་བདེ་ལེགས"]; // Array of words
 
