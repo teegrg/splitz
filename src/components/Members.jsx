@@ -7,8 +7,10 @@ const Members = () => {
   const navigate = useNavigate();
 
   const handleMemberCountChange = (e) => {
-    const count =
-      e.target.value === "" ? "" : parseInt(e.target.value, 10) || 0;
+    let count = parseInt(e.target.value, 10) || 0;
+    if (count > 10) {
+      count = 10; // Limit to a maximum of 10 members
+    }
     setMemberCount(count);
     setMemberNames(Array(count).fill(""));
   };
@@ -32,12 +34,9 @@ const Members = () => {
       </div>
     ));
   };
-  
 
   const handleSaveClick = () => {
-    // You can access the customized member names in the memberNames state array
-    // console.log("Customized Member Names:", memberNames);
-    navigate('/rent', { state: { memberNames } });
+    navigate("/rent", { state: { memberNames } });
   };
 
   return (
@@ -49,10 +48,13 @@ const Members = () => {
           value={memberCount === 0 ? "" : memberCount}
           onChange={handleMemberCountChange}
           inputMode="numeric"
+          maxLength={2} // Limit input to 2 characters
         />
       </div>
       <div className="member__list">{generateMembers()}</div>
-      <button className="member__btn" onClick={handleSaveClick}>Next</button>
+      <button className="member__btn" onClick={handleSaveClick}>
+        Next
+      </button>
     </div>
   );
 };
