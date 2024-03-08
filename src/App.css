@@ -65,7 +65,7 @@ a {
 
 .transform-wrapper {
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -223,7 +223,7 @@ input[type="text"] {
   width: 4px;
   height: 2px;
   position: absolute;
-  top: 3.5px;
+  top: 4px;
   right: 10px;
 }
 
@@ -236,11 +236,18 @@ input[type="text"] {
 
 .customized {
   text-align: center;
-  height: 650px;
+  height: 100%;
   margin-top: 25px;
   padding-top: 50px;
   font-family: "Source Code Pro", monospace;
 
+}
+
+.customized__title {
+  color: var(--main-gray);
+  font-family: "Source Code Pro", monospace;
+  font-size: 2em;
+  padding-bottom: 25px;
 }
 
 .customized__input {
@@ -263,6 +270,10 @@ input[type="text"] {
   font-size: x-large;
 }
 
+.rent__indv {
+  margin-bottom: 50px;
+}
+
 .footer {
   height: 100px;
   font-family: "Source Code Pro", monospace;
@@ -274,6 +285,10 @@ input[type="text"] {
   background-color: rgba(242, 240, 240, 0.971);
 }
 
+.about {
+  font-family: "Source Code Pro", monospace;
+  padding: 75px;
+}
 
 /* .counter {
   font-size: 2.5em;
